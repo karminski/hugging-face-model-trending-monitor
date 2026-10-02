@@ -1,0 +1,29 @@
+# Firmware secrets: Wi-Fi SSID/password and the device API URL.
+# Copy client/config.example.h to client/config.h locally.
+client/config.h
+client/config.local.h
+
+# Deploy credentials and local environment files.
+cloudflare-env.conf
+.env
+.env.*
+!.env.example
+.dev.vars
+**/.dev.vars
+credentials.json
+*-credentials.json
+secrets.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Wrangler local state can contain OAuth tokens.
+.wrangler/
+
+# Dependencies
+node_modules/
+
+# Local notes and agent history that may include pasted secrets.
+.specstory/
+docs/

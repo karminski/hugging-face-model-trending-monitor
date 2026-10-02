@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hf-trending",
+  "account_id": "f8edb46f6846d8915404d1ce09010f88",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-29",
+  "observability": {
+    "enabled": false
+  },
+  "kv_namespaces": [
+    {
+      "binding": "TRENDING_KV",
+      "id": "bec5f97e1f894c23b029b1edd4c39117"
+    }
+  ]
+}
