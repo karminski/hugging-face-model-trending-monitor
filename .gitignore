@@ -1,0 +1,51 @@
+# Firmware secrets: Wi-Fi SSID/password and the device API URL.
+# Copy client/config.example.h to client/config.h locally.
+client/config.h
+client/config.local.h
+
+# Server secrets (LLM API key etc.). Copy .env.example to .env locally.
+.env
+.env.*
+!.env.example
+
+# Generic credential files.
+credentials.json
+*-credentials.json
+secrets.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Legacy Cloudflare Worker deploy state; may still hold tokens in old checkouts.
+cloudflare-env.conf
+.dev.vars
+**/.dev.vars
+.wrangler/
+
+# Dependencies
+node_modules/
+
+# Server runtime data: trending snapshot, calendar outputs, weather cache.
+server/data/
+
+# Fonts downloaded on first use (npm run fonts).
+server/fonts/
+
+# Build and tool output.
+tools/*.exe
+__pycache__/
+*.pyc
+*.tsbuildinfo
+
+# Logs, e.g. Chromium crashpad debug.log from the calendar renderer.
+*.log
+
+# OS files.
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local notes and agent history that may include pasted secrets.
+.specstory/
+docs/

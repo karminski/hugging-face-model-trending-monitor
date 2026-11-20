@@ -1,0 +1,34 @@
+{
+  "name": "pixel-monitor-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "tsx src/main.ts",
+    "generate": "tsx src/cli.ts generate",
+    "batch": "tsx src/cli.ts batch",
+    "recompose": "tsx src/cli.ts recompose",
+    "gallery": "tsx src/cli.ts gallery",
+    "fonts": "tsx src/calendar/fonts.ts",
+    "test": "vitest run",
+    "test:live": "node ./scripts/test-live.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "fflate": "^0.8.3",
+    "lunar-javascript": "^1.7.8",
+    "playwright": "^1.65.1",
+    "pngjs": "^7.0.0",
+    "three": "^0.187.0",
+    "undici": "^8.12.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/pngjs": "^6.0.5",
+    "@types/three": "^0.187.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
